@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<appender name="TERMINAL" class="org.eclipse.californium.scandium.examples.TerminalAppender">
+		<encoder>
+			<pattern>%d [%p] %m%n</pattern>
+		</encoder>
+	</appender>
+
+	<root level="WARN">
+		<appender-ref ref="TERMINAL" />
+	</root>
+	
+	<logger name="org.eclipse.californium.scandium.examples" level="INFO"/>
+</configuration>
